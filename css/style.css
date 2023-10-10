@@ -21,4 +21,38 @@ header {
     justify-content: space-between;
     align-items: baseline;
     background-color: #A6C398;
+    text-align: center;
+}
+
+header nav ul {
+    display: flex;
+    gap: 1rem;
+    list-style: none;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: black ;
+}
+
+main {
+    text-align: center;
+}
+
+#women {
+    width: 150px ;
+    height: 350px;
+    background-color: #97a193
+}
+
+#men {
+    width: 150px;
+    height: 350px;
+    background-color: #97a193;
+}
+
+#news {
+    width: 300px;
+    height: 350px;
+    background-color: #97a193;
 }
