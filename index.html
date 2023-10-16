@@ -3,16 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/icons/css/fontawesome.css" rel="stylesheet">
+    <link href="css/icons/css/brands.css" rel="stylesheet">
+    <link href="css/icons/css/solid.css" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css" type="text/css">
     <title>Forside</title>
 </head>
 <body>
+    <div id="grid-container">
     <header>
         <span>
             <a href="#" id="logo">Logo</a>
         </span>
+        <div>
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <i class="fa-solid fa-bars"></i>
+        </div>
         <nav>
-            <ul>
+            <ul class="navbar">
                 <li> <a href="#">Meny</a></li>
                 <li> <a href="#">Søkefelt</a></li>
                 <li> <a href="#">Profil</a></li>
@@ -21,19 +29,46 @@
         </nav>
     </header>
     <main>
-    <section>
-        <article id="women">
-            <h2>Dame</h2>
-        </article>
-        <article id="men">
-            <h2>Herre</h2>
-        </article>
-        <article id="news">
-            <h2>Nyheter</h2>
-        </article>
-    </section>
+        <section>
+            <article id="news">
+                <h2>Nyheter</h2>
+            </article>
+            <article id="women">
+                <h2>Dame</h2>
+            </article>
+            <article id="men">
+                <h2>Herre</h2>
+            </article>
+        </section>
     </main>
     <footer>
+        <section class="info">
+            <article>
+                <h3>Om oss</h3>
+                <p>We've got to manage that low hanging fruit we want to empower the team with the right tools and guidance to uplevel our craft and build better.</p>
+            </article>
+            <article>
+                <h3>Kundeservice</h3>
+                <p>On your plate rehydrate the team commitment to the cause , but dog and pony show parallel path.</p>
+            </article>
+            <article>
+                <h3>Kundeklubb</h3>
+                <p>Curate radical candor moving the goalposts, put your feelers out, or we need distributors to evangelize.</p>
+            </article>
+        </section>
     </footer>
+    </div>
+    <script>
+
+    let x = document.querySelector(".navbar")
+
+    document.getElementById("ham").addEventListener("click", (e) => {
+        if(x.className === "navbar") {
+            x.className += " responsive";
+        } else {
+            x.className = "navbar"
+        }
+    })
+    </script>
 </body>
 </html>
