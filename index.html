@@ -12,32 +12,37 @@
 <body>
     <div id="grid-container">
     <header>
-        <span>
-            <a href="#" id="logo">Logo</a>
-        </span>
-        <div>
-            <i class="fa-solid fa-magnifying-glass"></i>
-            <i class="fa-solid fa-bars"></i>
-        </div>
         <nav>
+            <span>
+                <a href="#" id="logo">Logo</a>
+            </span>
+            <div>
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <i id="meny" class="fa-solid fa-bars"></i>
+            </div>
             <ul class="navbar">
-                <li> <a href="#">Meny</a></li>
-                <li> <a href="#">Søkefelt</a></li>
+                <li> <a href="#">Produkter</a></li>
                 <li> <a href="#">Profil</a></li>
                 <li> <a href="#">Handlekurv</a></li>
+                <li> <a href="index.html">Hjem</a></li>
             </ul>
         </nav>
     </header>
     <main>
-        <section>
+        <section class="nyheter">
             <article id="news">
                 <h2>Nyheter</h2>
+                <img class="prodimg" src="https://placehold.co/600x400">
             </article>
+        </section>
+        <section class="dame-menn">
             <article id="women">
                 <h2>Dame</h2>
+                <img class="prodimg" src="img/women1.png">
             </article>
             <article id="men">
                 <h2>Herre</h2>
+                <img class="prodimg" src="https://placehold.co/600x400">
             </article>
         </section>
     </main>
@@ -62,7 +67,7 @@
 
     let x = document.querySelector(".navbar")
 
-    document.getElementById("ham").addEventListener("click", (e) => {
+    document.getElementById("meny").addEventListener("click", (e) => {
         if(x.className === "navbar") {
             x.className += " responsive";
         } else {
