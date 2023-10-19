@@ -11,9 +11,9 @@ header {
     grid-area: header;
     font-size: 1.5rem;
     font-weight: 600;
-    padding: 0.5rem;
+    padding: 1.5rem;
     position: relative;
-    background-color: rgb(138, 126, 126);
+    background-color: #A6C398;
 }
 
 header nav {
@@ -60,7 +60,7 @@ header nav div {
     display: flex;
     flex-direction: column;
     position: absolute; 
-    background-color: rgb(138, 126, 126);
+    background-color: #A6C398;
     margin: 0;
     padding: 0;
     top: 40px;
@@ -131,6 +131,7 @@ footer {
         gap: 1rem;
         list-style: none;
         margin: 0;
+        text-decoration: none;
     }
 
     #meny, .fa-magnifying-glass {
@@ -153,7 +154,7 @@ footer {
     header nav ul li {
         color: black;
         font-weight: 400 ;
-        font-size: 1rem;
+        font-size: 1.1rem;
         padding: 0.5rem;
     }
 }
