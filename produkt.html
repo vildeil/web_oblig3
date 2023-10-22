@@ -3,10 +3,111 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/icons/css/fontawesome.css" rel="stylesheet">
+    <link href="css/icons/css/brands.css" rel="stylesheet">
+    <link href="css/icons/css/solid.css" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css" type="text/css">
     <title>Produkter</title>
 </head>
 <body>
-    
+    <div id="grid-container">
+        <header>
+            <nav>
+                <span>
+                    <a href="#" id="logo">Logo</a>
+                </span>
+                <div>
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <i id="meny" class="fa-solid fa-bars"></i>
+                </div>
+                <ul class="navbar">
+                    <li> <a href="produkt.html">Produkter</a></li>
+                    <li> <a href="#">Profil</a></li>
+                    <li> <a href="handlekurv.html">Handlekurv</a></li>
+                    <li> <a href="index.html">Hjem</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <section class="prod">
+                <h2>Produkter</h2>
+            </section>
+            <section class="main-produkt">
+                <article>
+                    <img class="prodimg" src="img/man.png" alt="bilde av sko">
+                    <!--Bilde er generert av https://www.craiyon.com/-->
+                    <p>Sko</p>
+                </article>
+                <article>
+                    <img class="prodimg" src="img/women5.png" alt="bilde av sko">
+                    <!--Bilde er generert av https://www.craiyon.com/-->
+                    <p>Sko</p>
+                </article>
+                <article>
+                    <img class="prodimg" src="img/man5.png" alt="bilde av sko">
+                    <!--Bilde er generert av https://www.craiyon.com/-->
+                    <p>Sko</p>
+                </article>
+                <article>
+                    <img class="prodimg" src="img/man.png" alt="bilde av sko">
+                    <!--Bilde er generert av https://www.craiyon.com/-->
+                    <p>Sko</p>
+                </article>
+                <article>
+                    <img class="prodimg" src="img/women5.png" alt="bilde av sko">
+                    <!--Bilde er generert av https://www.craiyon.com/-->
+                    <p>Sko</p>
+                </article>
+                <article>
+                    <img class="prodimg" src="img/man5.png" alt="bilde av sko">
+                    <!--Bilde er generert av https://www.craiyon.com/-->
+                    <p>Sko</p>
+                </article>
+                <article>
+                    <img class="prodimg" src="img/man.png" alt="bilde av sko">
+                    <!--Bilde er generert av https://www.craiyon.com/-->
+                    <p>Sko</p>
+                </article>
+                <article>
+                    <img class="prodimg" src="img/women5.png" alt="bilde av sko">
+                    <!--Bilde er generert av https://www.craiyon.com/-->
+                    <p>Sko</p>
+                </article>
+                <article>
+                    <img class="prodimg" src="img/man5.png" alt="bilde av sko">
+                    <!--Bilde er generert av https://www.craiyon.com/-->
+                    <p>Sko</p>
+                </article>
+            </section>
+        </main>
+        <footer>
+            <section class="info">
+                <article>
+                    <h3>Om oss</h3>
+                    <p>We've got to manage that low hanging fruit we want to empower the team with the right tools and guidance to uplevel our craft and build better.</p>
+                </article>
+                <article>
+                    <h3>Kundeservice</h3>
+                    <p>On your plate rehydrate the team commitment to the cause , but dog and pony show parallel path.</p>
+                </article>
+                <article>
+                    <h3>Kundeklubb</h3>
+                    <p>Curate radical candor moving the goalposts, put your feelers out, or we need distributors to evangelize.</p>
+                </article>
+            </section>
+        </footer>
+    </div>
+        <script>
+            let x = document.querySelector(".navbar")
+        
+            document.getElementById("meny").addEventListener("click", (e) => {
+                if(x.className === "navbar") {
+                    x.className += " responsive";
+                } else {
+                    x.className = "navbar"
+                }
+            })
+            //fått kode av Ann-Charlott Karlsen under uvervisning 16/10.23
+        </script>
 </body>
 </html>
