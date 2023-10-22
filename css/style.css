@@ -52,7 +52,6 @@ header nav div {
 .dame-menn {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
     justify-content: space-between;
 }
 .responsive {
@@ -172,7 +171,6 @@ main section article p {
 
     #grid-container {
         grid-template-areas: "header header header" "main main main" "footer footer footer";
-        grid-template-areas: 1fr 1fr 1fr;
     }
 
     .navbar {
@@ -189,11 +187,19 @@ main section article p {
     }
 
     header nav ul li {
-        color: black;
-        font-weight: 400 ;
-        font-size: 1.1rem;
+        font-weight: 550 ;
+        font-size: 1.3rem;
         padding: 0.5rem;
+    }
+
+    header nav ul li a {
         text-decoration: none;
+        color: black;
+    }
+
+    .dame-menn {
+        gap: 11rem;
+        justify-content: center;
     }
 
     .mainhandle {
